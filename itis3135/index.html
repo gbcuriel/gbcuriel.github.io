@@ -4,37 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+  <title>Grimble Curiel | My Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header,
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .github-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    .github-link:hover {
+      text-decoration: underline;
+    }
+
+    footer nav a {
+      color: #fff;
+      margin: 0 1rem;
+    }
+
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <h1>Welcome to My Homepage</h1>
-    <div>
-      <nav>
-        <ul style="list-style: none; display: flex; gap: 2rem; padding: 0; margin: 0; justify-content: center;">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contract.html">Contract</a></li>
-          <li><a href="introduction.html">Introduction</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Grimble Curiel</h1>
   </header>
   <main>
     <h2>My Homepage</h2>
-    <p>
-      Hi! I'm Grimble. This is my personal site where I share projects, ideas, and more.<br>
-      Feel free to explore and connect!
-    </p>
-    <div>
-      <a href="https://github.com/gbcuriel" target="_blank" class="github-link">
-        Visit my GitHub
-      </a>
-    </div>
+    <p>Hello! I'm Grimble Curiel, a student at UNC Charlotte. Welcome to my homepage.</p>
+    <p>This site is a portfolio and resource for my ITIS 3135 coursework. Here you'll find information about me, my projects, and ways to connect.</p>
+    <a href="https://github.com/gbcuriel" target="_blank" class="github-link">Visit my GitHub</a>
   </main>
   <footer>
-    &copy; 2025 Grimble Curiel &mdash; All rights reserved.
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="contract.html">Contract</a> |
+      <a href="introduction.html">Introduction</a>
+    </nav>
+    <div style="margin-top:1rem;">
+      &copy; 2025 Grimble Curiel &mdash; All rights reserved.
+    </div>
+    <div style="margin-top:1rem;">
+      <a href="https://validator.accumulus.dev/validate" target="_blank" style="color:#fff;">Validate this page (Accumulus)</a>
+    </div>
   </footer>
 </body>
 
