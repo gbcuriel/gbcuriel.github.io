@@ -12,12 +12,12 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #ffb07c 0%, #ff5e62 100%);
-            color: #fff;
+            background: #eba272;
+            color: #ffffff
         }
 
         header {
-            background: transparent;
+            background: linear-gradient(90deg, #ffb07c 0%, #ff5e62 100%);
             padding: 2rem 0;
             text-align: center;
             box-shadow: none;
@@ -26,7 +26,7 @@
         main {
             max-width: 700px;
             margin: 3rem auto;
-            background: linear-gradient(135deg, #ffb07c 0%, #ff5e62 100%);
+            background: linear-gradient(135deg, #000000 0%, #ff5e62 100%);
             border-radius: 20px;
             box-shadow: 0 8px 32px rgba(255, 94, 98, 0.18);
             padding: 2rem;
@@ -58,6 +58,14 @@
         a:hover {
             color: #ffffff;
         }
+
+        .sticky-div {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 100;
+        }
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -74,9 +82,8 @@
         </p>
     </main>
 
-    <footer>
-
-        <div style="margin-top:1rem;">
+    <footer class="sticky-div">
+        <div style="margin-top:1rem; margin-bottom:1rem;">
             <nav>
                 <a href="itis3135/">ITIS3135</a> |
                 <a href="https://github.com/gbcuriel" target="_blank">GitHub.com</a> |
