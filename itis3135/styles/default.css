@@ -55,3 +55,16 @@ a:hover {
     width: 100%;
     z-index: 100;
 }
+
+.centered {
+    text-align: center;
+}
+
+.intro-img {
+    display: block;
+    width: 100%;
+    max-width: 3840px;
+    max-height: 2160px;
+    height: 100%;
+    margin: 0 auto;
+}
