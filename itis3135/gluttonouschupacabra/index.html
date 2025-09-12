@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Your Firm Name) | Web & Brand Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- 
+        Assignment Requirement: Add the URL for your Coolors color scheme.
+        Coolors Palette URL: https://coolors.co/(your-palette-url-here) 
+    -->
+
+    <!-- Assignment Requirement: Use an EMBEDDED stylesheet. -->
+    <style>
+        :root {
+            --dark-blue: #0D1B2A;
+            --mid-dark-blue: #1B263B;
+            --slate-blue: #415A77;
+            --light-slate-blue: #778DA9;
+            --off-white: #E0E1DD;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--off-white);
+            color: var(--dark-blue);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: var(--mid-dark-blue);
+            color: var(--off-white);
+            padding: 2rem 0;
+            border-bottom: 5px solid var(--slate-blue);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+            border: 2px solid var(--off-white);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 2rem 0;
+        }
+
+        main h2 {
+            font-size: 2em;
+            color: var(--slate-blue);
+            border-bottom: 2px solid var(--light-slate-blue);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        main h3 {
+            font-size: 1.5em;
+            color: var(--dark-blue);
+        }
+
+        /* Unordered List with non-standard bullet style */
+        ul {
+            list-style-type: '✓  ';
+            /* Non-standard bullet point */
+            font-size: 1.1em;
+            padding-left: 25px;
+        }
+
+        li {
+            padding-left: 10px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Info Block */
+        .contact-info {
+            background-color: #FFFFFF;
+            border: 1px solid var(--light-slate-blue);
+            border-left: 7px solid var(--mid-dark-blue);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info a {
+            color: var(--slate-blue);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--off-white);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0.25rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <!-- 
+                Assignment Requirement: A graphic next to the company name.
+                Image must be resized before use and include height/width attributes.
+                This is a placeholder image representing a simple, elegant logo.
+            -->
+            <img src="https://placehold.co/80x80/E0E1DD/0D1B2A?text=LOGO" alt="(Your Firm Name) Logo" width="80"
+                height="80">
+            <h1>(Your Firm Name)</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Assignment Requirement: H2 with the name of the page -->
+        <h2>(Your Firm Name)'s Services</h2>
+
+        <!-- Assignment Requirement: Made-up paragraph describing the company -->
+        <p>
+            Welcome to (Your Firm Name), where creativity meets code. We are a boutique design firm dedicated to
+            crafting beautiful, functional, and user-friendly websites for small businesses and creative professionals.
+            Our philosophy is simple: your success is our success. We listen, we create, and we deliver digital
+            experiences that resonate with your audience.
+        </p>
+
+        <!-- Assignment Requirement: Unordered list with 5-10 "amazing things" -->
+        <h3>What Sets Us Apart?</h3>
+        <ul>
+            <li>Bespoke designs tailored to your unique brand identity.</li>
+            <li>Clean, efficient, and well-documented code.</li>
+            <li>Mobile-first responsive design for perfect viewing on any device.</li>
+            <li>Search Engine Optimization (SEO) fundamentals built-in.</li>
+            <li>Transparent pricing with no hidden fees.</li>
+            <li>Fast turnaround times to get your project online sooner.</li>
+            <li>Personalized one-on-one client communication.</li>
+        </ul>
+
+        <!-- Assignment Requirement: Another paragraph + contact info block -->
+        <p>
+            We're ready to build the website your business deserves. Let's collaborate to turn your vision into a
+            digital reality. Reach out today for a free, no-obligation consultation!
+        </p>
+
+        <div class="contact-info">
+            <strong>Contact Information:</strong>
+            <p><strong>Email:</strong> <a href="mailto:contact@yourdomain.com">(your-email@yourdomain.com)</a></p>
+            <p><strong>Phone:</strong> (Your Phone Number)</p>
+            <p><strong>Address:</strong> (Your Business Address)</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <!-- 
+                Assignment Requirement: Footer does NOT have "Designed by...".
+                It should have a copyright and a unique slogan.
+            -->
+            <p>(Your Company Slogan Here)</p>
+            <p>&copy; 2025 (Your Firm Name)</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
