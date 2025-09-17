@@ -12,12 +12,12 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #eba272;
-      color: #ffffff
+      background: #aa2a1e;
+      color: #ffffff;
     }
 
     header {
-      background: linear-gradient(90deg, #ffb07c 0%, #ff5e62 100%);
+      background: linear-gradient(90deg, #961f14 0%, #690310 100%);
       padding: 2rem 0;
       text-align: center;
       box-shadow: none;
@@ -26,9 +26,9 @@
     main {
       max-width: 700px;
       margin: 3rem auto;
-      background: linear-gradient(135deg, #000000 0%, #ff5e62 100%);
+      background: linear-gradient(135deg, #2d0000 0%, #d7263d 100%);
       border-radius: 20px;
-      box-shadow: 0 8px 32px rgba(255, 94, 98, 0.18);
+      box-shadow: 0 8px 32px rgba(215, 38, 61, 0.18);
       padding: 2rem;
       color: #fff;
     }
@@ -41,7 +41,7 @@
     footer {
       text-align: center;
       padding: 1.5rem 0;
-      background: linear-gradient(90deg, #ffb07c 0%, #ff5e62 100%);
+      background: linear-gradient(90deg, #961f14 0%, #690310 100%);
       font-size: 1rem;
       letter-spacing: 1px;
       color: #fff;
@@ -52,11 +52,11 @@
     }
 
     a {
-      color: #6b0000;
+      color: #ee8d1e;
     }
 
     a:hover {
-      color: #ffffff;
+      color: #9396a1;
     }
 
     .sticky-div {
@@ -84,19 +84,38 @@
 </head>
 
 <body>
-  <div w3-include-html="itis3135/components/header.html"></div>
-
+  <header>
+    <h1>Grimble Curiel's Page</h1>
+    <nav style="text-align: center; margin-top: 1rem;">
+      <ul style="list-style: none; display: flex; gap: 2rem; padding: 0; margin: 0; justify-content: center;">
+        <li><a href="index.html">Home</a></li>
+        <li>|</li>
+        <li><a href="itis3135/contract.html">Contract</a></li>
+        <li>|</li>
+        <li><a href="itis3135/introduction.html">Introduction</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <h2>My Homepage</h2>
-    <p>Hello! I'm Grimble Curiel, a student at UNC Charlotte. Welcome to my homepage.</p>
+    <p>Howdy! I'm Grimble Curiel, a college student. Welcome to my homepage.</p>
 
   </main>
 
-  <div w3-include-html="itis3135/components/footer.html"></div>
-
-  <script src="itis3135/scripts/HTMLInclude.js"></script>
-  <script>
-    includeHTML();
-  </script>
+  <footer class="sticky-div">
+    <div style="margin-top:1rem; margin-bottom:1rem;">
+      <nav>
+        <a href="https://gbcuriel.github.io/itis3135/index.html" target="_blank">ITIS3135</a> |
+        <a href="https://github.com/gbcuriel" target="_blank">GitHub.com</a> |
+        <a href="https://webpages.charlotte.edu/dcuriel" target="_blank">CLT Web</a> |
+        <a href="https://gbcuriel.github.io" target="_blank">GitHub.io</a> |
+        <a href="https://www.linkedin.com/in/diego-curiel-a16088223" target="_blank">LinkedIn</a>
+      </nav>
+      <div style="margin-top:1rem;">
+        &copy;2025 Grimble Curiel &mdash; All rights reserved.
+        <p>Designed by <a href="itis3135/grimbleenterprises.com/index.html">Grimble Enterprises</a></p>
+      </div>
+    </div>
+  </footer>
 
 </body>
