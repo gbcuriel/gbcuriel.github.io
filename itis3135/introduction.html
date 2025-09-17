@@ -8,22 +8,11 @@
     <link rel="icon" href="images/sombrero.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="styles/default.css" />
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-    <header>
-        <h1>ITIS 3135 | Grimble Curiel Gluttonous Chupacabra | Introduction</h1>
-        <nav style="text-align: center; margin-top: 1rem;">
-            <ul style="list-style: none; display: flex; gap: 2rem; padding: 0; margin: 0; justify-content: center;">
-                <li><a href="index.html">Home</a></li>
-                <li>|</li>
-                <li><a href="contract.html">Contract</a></li>
-                <li>|</li>
-                <li><a href="introduction.html">Introduction</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div w3-include-html="component/header.html"></div>
+
     <main>
         <h1 class="centered">Introduction</h1>
         <img class="intro-img" src="images/mexico_trip.jpg" alt="Picture of Grimble Curiel" />
@@ -57,31 +46,12 @@
         </p>
     </main>
 
-    <p>
-        <!-- Footer spacing -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </p>
+    <div w3-include-html="component/footer.html"></div>
 
-    <footer class="sticky-div">
-        <div style="margin-top:1rem; margin-bottom:1rem;">
-            <nav>
-                <a href="itis3135/">ITIS3135</a> |
-                <a href="https://github.com/gbcuriel" target="_blank">GitHub.com</a> |
-                <a href="https://webpages.charlotte.edu/dcuriel" target="_blank">CLT Web</a> |
-                <a href="https://gbcuriel.github.io" target="_blank">GitHub.io</a> |
-                <a href="https://www.linkedin.com/in/diego-curiel-a16088223" target="_blank">LinkedIn</a>
-            </nav>
-            <div style="margin-top:1rem;">
-                &copy;2025 Grimble Curiel &mdash; All rights reserved.
-                <p>Designed by <a href="grimbleenterprises.com/index.html">Grimble Enterprises</a></p>
-            </div>
-        </div>
-    </footer>
-
+    <script src="scripts/HTMLInclude.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

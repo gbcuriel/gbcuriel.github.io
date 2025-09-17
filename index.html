@@ -84,38 +84,19 @@
 </head>
 
 <body>
-  <header>
-    <h1>ITIS 3135 | Grimble Curiel Gluttonous Chupacabra | Homepage</h1>
-    <nav style="text-align: center; margin-top: 1rem;">
-      <ul style="list-style: none; display: flex; gap: 2rem; padding: 0; margin: 0; justify-content: center;">
-        <li><a href="index.html">Home</a></li>
-        <li>|</li>
-        <li><a href="itis3135/contract.html">Contract</a></li>
-        <li>|</li>
-        <li><a href="itis3135/introduction.html">Introduction</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div w3-include-html="itis3135/component/header.html"></div>
+
   <main>
     <h2>My Homepage</h2>
     <p>Hello! I'm Grimble Curiel, a student at UNC Charlotte. Welcome to my homepage.</p>
 
   </main>
 
-  <footer class="sticky-div">
-    <div style="margin-top:1rem; margin-bottom:1rem;">
-      <nav>
-        <a href="https://gbcuriel.github.io/itis3135/index.html">ITIS3135</a> |
-        <a href="https://github.com/gbcuriel" target="_blank">GitHub.com</a> |
-        <a href="https://webpages.charlotte.edu/dcuriel" target="_blank">CLT Web</a> |
-        <a href="https://gbcuriel.github.io" target="_blank">GitHub.io</a> |
-        <a href="https://www.linkedin.com/in/diego-curiel-a16088223" target="_blank">LinkedIn</a>
-      </nav>
-      <div style="margin-top:1rem;">
-        &copy;2025 Grimble Curiel &mdash; All rights reserved.
-        <p>Designed by <a href="itis3135/grimbleenterprises.com/index.html">Grimble Enterprises</a></p>
-      </div>
-    </div>
-  </footer>
+  <div w3-include-html="itis3135/component/footer.html"></div>
+
+  <script src="itis3135/scripts/HTMLInclude.js"></script>
+  <script>
+    includeHTML();
+  </script>
 
 </body>
