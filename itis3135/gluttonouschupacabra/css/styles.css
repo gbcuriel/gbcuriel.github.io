@@ -33,10 +33,14 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav a {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
 a {
     color: #ffd139;
     text-decoration: none;
-    font-weight: bold;
 }
 
 a:hover {
