@@ -13,7 +13,7 @@ header {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 90%;
     margin: 0 auto;
     background: linear-gradient(135deg, #000000 0%, #ff5e62 100%);
@@ -68,4 +68,25 @@ a:hover {
     max-height: 2160px;
     height: 100%;
     margin: 0 auto;
+}
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    #colorbox {
+        background-color: yellow;
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    #colorbox {
+        background-color: orange;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    #colorbox {
+        background-color: red;
+    }
 }
