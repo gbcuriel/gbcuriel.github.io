@@ -19,7 +19,7 @@ main {
     background: linear-gradient(135deg, #000000 0%, #ff5e62 100%);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(255, 94, 98, 0.18);
-    padding: 2rem;
+    padding: 1rem;
     color: #fff;
 }
 
