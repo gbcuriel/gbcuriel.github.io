@@ -13,8 +13,9 @@ header {
 }
 
 main {
-    max-width: 700px;
-    margin: 3rem auto;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
     background: linear-gradient(135deg, #000000 0%, #ff5e62 100%);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(255, 94, 98, 0.18);
