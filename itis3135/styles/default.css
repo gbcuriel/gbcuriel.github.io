@@ -7,7 +7,7 @@ body {
 
 header {
     background: linear-gradient(90deg, #ffb07c 0%, #ff5e62 100%);
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
     box-shadow: none;
 }
@@ -89,4 +89,28 @@ a:hover {
     #colorbox {
         background-color: red;
     }
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: left;
+    vertical-align: center;
+}
+
+th {
+    background-color: #c74646;
+    text-align: center !important;
+}
+
+td ul {
+    padding-left: 20px;
+    margin: 0;
 }
