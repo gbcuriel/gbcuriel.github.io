@@ -23,6 +23,11 @@ main {
     color: #fff;
 }
 
+main a {
+    color: #ffb07c;
+    text-decoration: none;
+}
+
 main p {
     font-size: 1.2rem;
     line-height: 1.6;
