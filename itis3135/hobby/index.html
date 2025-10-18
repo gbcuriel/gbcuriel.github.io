@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Blacksmithing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Basic Reset & Setup --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #2A363B;
+            /* Dark Slate Gray */
+            color: #E8E8E8;
+            /* Light Gray */
+            line-height: 1.6;
+        }
+
+        /* --- Layout Containers --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        main {
+            padding: 1rem 0;
+        }
+
+        /* --- Typography & Links --- */
+        h1,
+        h2 {
+            color: #99B898;
+            /* Muted Green */
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #FF847C;
+            /* Coral Red Accent - Evokes hot metal */
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #FF847C;
+            /* Coral Red Accent */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover,
+        a:focus {
+            color: #E84A5F;
+            /* Deeper Coral */
+            text-decoration: underline;
+        }
+
+        /* --- Header & Navigation --- */
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        header nav a {
+            padding: 8px 15px;
+            background-color: #3e5057;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            background-color: #99B898;
+            color: #2A363B;
+            text-decoration: none;
+        }
+
+        /* The unique divider symbol using a pseudo-element */
+        header nav li:not(:last-child)::after {
+            content: '🔥';
+            /* Fire emoji divider */
+            margin-left: 10px;
+            color: #FF847C;
+        }
+
+        /* --- Section Styling & Single-Page Functionality --- */
+        .page-section {
+            display: none;
+            /* Hide all sections by default */
+            padding: 20px;
+            border: 1px solid #3e5057;
+            border-radius: 8px;
+            background-color: #314046;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* --- Figure & Image Styling --- */
+        figure {
+            max-width: 600px;
+            margin: 2rem auto;
+            background-color: #2A363B;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #3e5057;
+        }
+
+        figure img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+
+        figcaption {
+            text-align: center;
+            font-weight: bold;
+            color: #99B898;
+            margin-top: 10px;
+        }
+
+        .ai-prompt {
+            font-style: italic;
+            font-size: 0.9em;
+            text-align: center;
+            margin-top: 5px;
+            color: #b0b0b0;
+        }
+
+        /* --- Footer --- */
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9em;
+        }
+
+        .validation-links img {
+            border: 0;
+            width: 88px;
+            height: 31px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container">
+        <h1>Blacksmithing</h1>
+        <nav>
+            <ul>
+                <li><a href="#what" class="nav-link">What</a></li>
+                <li><a href="#who" class="nav-link">Who</a></li>
+                <li><a href="#when" class="nav-link">When</a></li>
+                <li><a href="#where" class="nav-link">Where</a></li>
+                <li><a href="#how" class="nav-link">How</a></li>
+                <li><a href="#why" class="nav-link">Why</a></li>
+                <li><a href="#ai-prompts" class="nav-link">AI Prompts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="what" class="page-section">
+            <h2>What is Blacksmithing?</h2>
+            <p>[Explain the hobby of blacksmithing here. Describe it as the craft of forging metal, typically steel,
+                using tools like a hammer and anvil.]</p>
+            <p>[Describe the basic process: heating the metal in a forge until it's malleable, shaping it, and then
+                cooling it. Mention some common items that are made, like knives, tools, or decorative ironwork.]</p>
+            <p>[Add a third paragraph or another element like a list of basic tools.]</p>
+
+            <figure>
+                <img src="images/what-blacksmithing.jpg"
+                    alt="A blacksmith's hammer striking a piece of glowing hot metal on an anvil, sending sparks flying.">
+
+                <figcaption>At the Anvil</figcaption>
+                <p class="ai-prompt"><em>AI Prompt: A dynamic, high-contrast, photorealistic action shot of a
+                        blacksmith's hammer striking a glowing orange piece of steel on an anvil. Sparks are flying. The
+                        background is a dark, rustic workshop.</em></p>
+            </figure>
+        </section>
+
+        <section id="who" class="page-section">
+            <h2>Who Becomes a Smith?</h2>
+            <p>[Describe the kind of person who enjoys blacksmithing. Talk about creativity, patience, and an interest
+                in working with one's hands.]</p>
+            <p>[Mention that it's a hobby for people of all backgrounds, from artists to engineers, who share a passion
+                for creating tangible objects from raw materials.]</p>
+            <p>[Add a third paragraph or another element here.]</p>
+
+            <figure>
+                <img src="images/who-blacksmithing.jpg"
+                    alt="A master blacksmith guiding a student's hands as they learn to hammer metal.">
+
+                <figcaption>A Craft for All</figcaption>
+                <p class="ai-prompt"><em>AI Prompt: A warm, inviting, photorealistic image of a diverse group of people
+                        in a blacksmithing class. They are wearing safety gear and looking intently at a demonstration.
+                        The style should be encouraging and communal.</em></p>
+            </figure>
+        </section>
+
+        <section id="when" class="page-section">
+            <h2>When to Forge?</h2>
+            <p>[Discuss the best times for blacksmithing. Mention that it can be a year-round hobby, but cooler months
+                are often more comfortable due to the heat from the forge.]</p>
+            <p>[Talk about scheduling time for projects, from quick evening sessions for small items to full weekends
+                for more complex work.]</p>
+            <p>[Add a third paragraph, maybe about the rhythm of working or the time it takes to learn.]</p>
+
+            <figure>
+                <img src="images/when-blacksmithing.jpg"
+                    alt="A cozy blacksmith shop in the autumn, with leaves visible outside the open door.">
+                [Image representing time/season for smithing]
+                <figcaption>Forging Through the Seasons</figcaption>
+                <p class="ai-prompt"><em>AI Prompt: A peaceful, atmospheric, photorealistic shot looking out from inside
+                        a rustic blacksmith workshop. The forge is lit, and through the open door, you can see autumn
+                        leaves on the ground, suggesting a cool, crisp day perfect for working.</em></p>
+            </figure>
+        </section>
+
+        <section id="where" class="page-section">
+            <h2>Where to Set Up a Forge?</h2>
+            <p>[Describe suitable locations for a blacksmithing setup. Emphasize the need for a well-ventilated space,
+                like a garage with open doors, a shed, or an outdoor area.]</p>
+            <p>[Discuss safety considerations for the location, such as a non-flammable floor (dirt, gravel, or
+                concrete) and distance from combustible materials.]</p>
+            <p>[Mention options for those without a dedicated space, such as local makerspaces or community forges that
+                offer classes and memberships.]</p>
+
+            <figure>
+                <img src="images/where-blacksmithing.jpg"
+                    alt="A well-organized outdoor blacksmithing setup under a covered patio.">
+
+                <figcaption>The Home Forge</figcaption>
+                <p class="ai-prompt"><em>AI Prompt: A clean, well-organized home blacksmithing setup in a garage with
+                        the door open. An anvil, forge, and neatly arranged tools are visible. The image should look
+                        safe, practical, and achievable for a hobbyist. Photorealistic style.</em></p>
+            </figure>
+        </section>
+
+        <section id="how" class="page-section">
+            <h2>How to Get Started</h2>
+            <p>[Outline the basic steps to begin the hobby. Start with safety first: always wear safety glasses, leather
+                gloves, and non-synthetic clothing.]</p>
+            <p>[List the essential starter equipment: a forge, an anvil (or anvil-shaped object), a hammer, tongs, and a
+                piece of steel.]</p>
+            <p>[Strongly recommend taking a beginner class to learn the fundamentals of hammer control, heat management,
+                and safety from an experienced smith.]</p>
+
+            <figure>
+                <img src="images/how-blacksmithing.jpg"
+                    alt="A close-up of essential blacksmithing safety gear: leather gloves, safety glasses, and an apron.">
+
+                <figcaption>Safety and Basic Tools</figcaption>
+                <p class="ai-prompt"><em>AI Prompt: A flat-lay, photorealistic image of essential beginner blacksmithing
+                        gear on a dark, rustic wooden background. Include a cross-peen hammer, a pair of tongs, safety
+                        glasses, and leather gloves.</em></p>
+            </figure>
+        </section>
+
+        <section id="why" class="page-section">
+            <h2>Why Pick Up the Hammer?</h2>
+            <p>[Explain the rewarding aspects of blacksmithing. It’s a powerful way to de-stress and focus, turning your
+                full attention to the metal in front of you.]</p>
+            <p>[Talk about the immense satisfaction of creating something beautiful and functional with your own hands
+                from a simple bar of steel.]</p>
+            <p>[Mention the connection to history and the preservation of a timeless craft.]</p>
+
+            <figure>
+                <img src="images/why-blacksmithing.jpg"
+                    alt="A finished, hand-forged item like a decorative leaf or a simple knife, displayed proudly.">
+
+                <figcaption>The Finished Piece</figcaption>
+                <p class="ai-prompt"><em>AI Prompt: A beautiful, detailed, photorealistic still life of a hand-forged
+                        iron leaf keychain. It rests on a piece of weathered wood, showcasing the hammer marks and
+                        craftsmanship. The lighting is soft and highlights the texture of the metal.</em></p>
+            </figure>
+        </section>
+
+        <section id="ai-prompts" class="page-section">
+            <h2>AI Prompts Used</h2>
+            <p>[This section is for you to describe how you used AI. You can state that you used an AI to generate the
+                website skeleton and for image ideas.]</p>
+            <p>[The prompts for the images in each section are included in an italicized paragraph directly below each
+                image's caption. You can use these as a starting point for generating your own images.]</p>
+            <p>[Add a third paragraph if needed.]</p>
+            <figure>
+                <img src="images/ai-image.jpg"
+                    alt="An abstract digital art piece representing artificial intelligence.">
+
+                <figcaption>AI in Creative Work</figcaption>
+                <p class="ai-prompt"><em>AI Prompt: An abstract, conceptual image representing artificial intelligence.
+                        Use flowing neon lines, circuit board patterns, and glowing nodes to create a sense of a digital
+                        brain thinking. The color palette should be blues, purples, and blacks.</em></p>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <div class="validation-links">
+            <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="https://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML!">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+            </a>
+        </div>
+        <p>&copy; 2025 [Your Name/Firm Here]</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.page-section');
+
+            function showSection(sectionId) {
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+                const targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.style.display = 'block';
+                }
+            }
+
+            // Show the 'what' section by default on page load
+            showSection('what');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    showSection(targetId);
+                    document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
