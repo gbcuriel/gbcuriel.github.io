@@ -20,9 +20,7 @@
         body {
             font-family: 'Lato', sans-serif;
             background-color: #2A363B;
-            /* Dark Slate Gray */
             color: #E8E8E8;
-            /* Light Gray */
             line-height: 1.6;
         }
 
@@ -46,8 +44,7 @@
         /* --- Typography & Links --- */
         h1,
         h2 {
-            color: #99B898;
-            /* Muted Green */
+            color: #bd5e1f;
             margin-bottom: 1rem;
         }
 
@@ -58,7 +55,6 @@
         h2 {
             font-size: 2rem;
             border-bottom: 2px solid #FF847C;
-            /* Coral Red Accent - Evokes hot metal */
             padding-bottom: 0.5rem;
         }
 
@@ -68,7 +64,6 @@
 
         a {
             color: #FF847C;
-            /* Coral Red Accent */
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -76,7 +71,6 @@
         a:hover,
         a:focus {
             color: #E84A5F;
-            /* Deeper Coral */
             text-decoration: underline;
         }
 
@@ -106,7 +100,6 @@
         /* The unique divider symbol using a pseudo-element */
         header nav li:not(:last-child)::after {
             content: '🔥';
-            /* Fire emoji divider */
             margin-left: 10px;
             color: #FF847C;
         }
@@ -114,7 +107,6 @@
         /* --- Section Styling & Single-Page Functionality --- */
         .page-section {
             display: none;
-            /* Hide all sections by default */
             padding: 20px;
             border: 1px solid #3e5057;
             border-radius: 8px;
@@ -174,6 +166,103 @@
             width: 88px;
             height: 31px;
         }
+
+        /* --- Slideshow Styling --- */
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: 2rem auto;
+            height: 400px;
+            border: 1px solid #3e5057;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: fadeAnimation 15s infinite;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(42, 54, 59, 0.7);
+            color: #E8E8E8;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .slide:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .slide:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .slide:nth-child(3) {
+            animation-delay: 10s;
+        }
+
+        @keyframes fadeAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 1;
+            }
+
+            43% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* --- Table Styling --- */
+        table {
+            width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #3e5057;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3e5057;
+            color: #FF847C;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #2A363B;
+        }
     </style>
 </head>
 
@@ -198,141 +287,390 @@
 
         <section id="what" class="page-section">
             <h2>What is Blacksmithing?</h2>
-            <p>[Explain the hobby of blacksmithing here. Describe it as the craft of forging metal, typically steel,
-                using tools like a hammer and anvil.]</p>
-            <p>[Describe the basic process: heating the metal in a forge until it's malleable, shaping it, and then
-                cooling it. Mention some common items that are made, like knives, tools, or decorative ironwork.]</p>
-            <p>[Add a third paragraph or another element like a list of basic tools.]</p>
+            <p>Blacksmithing is an ancient craft centered regarding the creation of tools, weapons, and armor from
+                various materials mainly metals. It is a practical trade and an art form focused on transforming raw
+                metal into items that are either functional, decorative, or a combination of both.</p>
+            <p>The basic process is heating the metal in a forge until it becomes malleable so it to be shaped with a
+                hammer and anvil. When the desired shape is achieved the metal is cooled locking in its new shape. A
+                smith can forge an endless array of items, including durable tools, custom knives, and beautiful
+                decorative ironwork.</p>
+            <p>Some of the commonly used tools are:</p>
+            <ul style="margin-left: 15px;">
+                <li>Hammer</li>
+                <li>Anvil</li>
+                <li>Forge</li>
+                <li>Tongs</li>
+            </ul>
 
             <figure>
                 <img src="images/what-blacksmithing.jpg"
-                    alt="A blacksmith's hammer striking a piece of glowing hot metal on an anvil, sending sparks flying.">
+                    alt="A blacksmith's hammer striking a piece of glowing hot metal on an anvil, sending sparks flying">
 
                 <figcaption>At the Anvil</figcaption>
-                <p class="ai-prompt"><em>AI Prompt: A dynamic, high-contrast, photorealistic action shot of a
-                        blacksmith's hammer striking a glowing orange piece of steel on an anvil. Sparks are flying. The
-                        background is a dark, rustic workshop.</em></p>
+                <p style="text-align: center;"><em>A smith striking heated metal to form it to the desired shape.</em>
+                </p>
             </figure>
         </section>
 
         <section id="who" class="page-section">
             <h2>Who Becomes a Smith?</h2>
-            <p>[Describe the kind of person who enjoys blacksmithing. Talk about creativity, patience, and an interest
-                in working with one's hands.]</p>
-            <p>[Mention that it's a hobby for people of all backgrounds, from artists to engineers, who share a passion
-                for creating tangible objects from raw materials.]</p>
-            <p>[Add a third paragraph or another element here.]</p>
+            <p>In medieval times the blacksmith was an important member of the community, their forge was usually a
+                popular hub as many people would require their services. These smiths would make armor and weapons for
+                their lords and knights. For the common folk a smith would sell horseshoes, nails, cart peices, etc.</p>
+            <p>With the industrial Revolution came mass production of metal works where massive factories with large
+                machinery and large workforces produced products for many large scale metalworks. Industial smiths are
+                usually people who are well versed in repairing the machinery or handling flow of material through
+                presses and the like</p>
+            <p>Today the old manner of blacksmithing is most often found with hobbyists. People who either want to make
+                art or replicate tools and weapons from popular media, these are most easily found at places like the
+                Renaissance Faire and similar where people enjoy the old ways.</p>
 
-            <figure>
-                <img src="images/who-blacksmithing.jpg"
-                    alt="A master blacksmith guiding a student's hands as they learn to hammer metal.">
-
-                <figcaption>A Craft for All</figcaption>
-                <p class="ai-prompt"><em>AI Prompt: A warm, inviting, photorealistic image of a diverse group of people
-                        in a blacksmithing class. They are wearing safety gear and looking intently at a demonstration.
-                        The style should be encouraging and communal.</em></p>
-            </figure>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="images/who-traditional.jpg" alt="A historical blacksmiths forge.">
+                    <div class="slide-caption">Traditional Blacksmithing</div>
+                </div>
+                <div class="slide">
+                    <img src="images/who-industrial.jpg"
+                        alt="A large industrial forge pressing a massive piece of steel.">
+                    <div class="slide-caption">Industrial Forging</div>
+                </div>
+                <div class="slide">
+                    <img src="images/who-hobbyist.jpg" alt="A modern hobbyist smith forging a knife.">
+                    <div class="slide-caption">The Modern Hobbyist</div>
+                </div>
+            </div>
         </section>
 
         <section id="when" class="page-section">
-            <h2>When to Forge?</h2>
-            <p>[Discuss the best times for blacksmithing. Mention that it can be a year-round hobby, but cooler months
-                are often more comfortable due to the heat from the forge.]</p>
-            <p>[Talk about scheduling time for projects, from quick evening sessions for small items to full weekends
-                for more complex work.]</p>
-            <p>[Add a third paragraph, maybe about the rhythm of working or the time it takes to learn.]</p>
+            <h2>Forging History</h2>
+            <p>The story of blacksmithing is deeply interwoven with the timeline of human civilization, evolving
+                dramatically from its earliest sparks to its modern revival. In the Bronze Age (starting around 3300
+                BC), the earliest metalworkers were not yet shaping iron, but were pioneering the discovery of smelting
+                and the casting of copper, tin, and later bronze. This period saw the creation of foundational tools and
+                early weaponry, laying the groundwork for the more formidable metals to come.
+                </br></br>With the dawn of the Iron Age (circa 1200 BC), the true blacksmith emerged, mastering the
+                high heats required to work iron. This breakthrough marked a transformative era, as smiths began forging
+                stronger tools for agriculture and more potent weapons, fundamentally altering societal development and
+                daily life.
+                </br></br>During the Medieval Period (roughly 500-1500 AD), the blacksmith became the indispensable
+                heartbeat of every village and castle. Their forges hummed with activity, producing everything from
+                vital farming implements like plowshares and axes to the complex armor, swords, and intricate ironwork
+                that defined the era's craftsmanship and warfare. This was a time when the smith's skill was paramount
+                to survival and progress.
+                </br></br>The Industrial Revolution (from approximately 1760 AD) ushered in a radical shift, as
+                individual craftsmanship gave way to mass production. Giant steam hammers and hydraulic presses in vast
+                factories churned out train rails, structural girders, and uniform machine parts. The scale of
+                metalworking became immense, focused on efficiency and standardization rather than individual artistry,
+                fundamentally reshaping global industries and infrastructure.
+                </br></br>Finally, the Modern Era (20th Century - Today) has seen a profound resurgence of
+                blacksmithing, not out of necessity, but as a passionate hobby and respected art form. Contemporary
+                smiths, often working in smaller, independent shops, are dedicated to preserving historical techniques,
+                exploring new artistic expressions, and finding deep personal satisfaction in transforming metal with
+                their own hands, bridging ancient traditions with innovative designs and advanced alloys.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Era</th>
+                        <th>Key Developments</th>
+                        <th>Materials Used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bronze Age (~3300 BC)</td>
+                        <td>Discovery of smelting, casting tools and weapons.</td>
+                        <td>Copper, Tin, Bronze</td>
+                    </tr>
+                    <tr>
+                        <td>Iron Age (~1200 BC)</td>
+                        <td>Development of the first forges to work iron.</td>
+                        <td>Wrought Iron</td>
+                    </tr>
+                    <tr>
+                        <td>Medieval Period (~500 AD)</td>
+                        <td>Creation of armor, advanced tools, and decorative ironwork.</td>
+                        <td>Wrought Iron, Early Steel</td>
+                    </tr>
+                    <tr>
+                        <td>Industrial Revolution (~1760 AD)</td>
+                        <td>Mass production, development of large-scale forging.</td>
+                        <td>Cast Iron, Modern Steel</td>
+                    </tr>
+                    <tr>
+                        <td>Modern Era (20th Century - Today)</td>
+                        <td>Artisan revival, hobbyist blacksmithing, advanced alloys.</td>
+                        <td>High-Carbon Steels, Stainless Steel, Titanium</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <figure>
-                <img src="images/when-blacksmithing.jpg"
-                    alt="A cozy blacksmith shop in the autumn, with leaves visible outside the open door.">
-                [Image representing time/season for smithing]
+                <img src="images/when-blacksmithing.jpg" alt="Types of smithing over history.">
                 <figcaption>Forging Through the Seasons</figcaption>
-                <p class="ai-prompt"><em>AI Prompt: A peaceful, atmospheric, photorealistic shot looking out from inside
-                        a rustic blacksmith workshop. The forge is lit, and through the open door, you can see autumn
-                        leaves on the ground, suggesting a cool, crisp day perfect for working.</em></p>
+                <p class="ai-prompt"><em>AI Prompt: Generate an image of black smithing through the ages.</em></p>
             </figure>
         </section>
 
         <section id="where" class="page-section">
             <h2>Where to Set Up a Forge?</h2>
-            <p>[Describe suitable locations for a blacksmithing setup. Emphasize the need for a well-ventilated space,
-                like a garage with open doors, a shed, or an outdoor area.]</p>
-            <p>[Discuss safety considerations for the location, such as a non-flammable floor (dirt, gravel, or
-                concrete) and distance from combustible materials.]</p>
-            <p>[Mention options for those without a dedicated space, such as local makerspaces or community forges that
-                offer classes and memberships.]</p>
+            <p>Probably the most common forge is found in peoples sheds and garages, these forges are spaces that can be
+                easily ventilated or opened should they get to hot. In these forges depending on the amount of
+                dedication and time set in the forge you may or may not find large tools and larger varieties. The image
+                below depicts a well used/experienced forge. As seen the forge has a stone floor as minimizing flamable
+                objects is crucial.</p>
 
             <figure>
-                <img src="images/where-blacksmithing.jpg"
+                <img src="images/shed-forge.jpg"
                     alt="A well-organized outdoor blacksmithing setup under a covered patio.">
-
-                <figcaption>The Home Forge</figcaption>
-                <p class="ai-prompt"><em>AI Prompt: A clean, well-organized home blacksmithing setup in a garage with
-                        the door open. An anvil, forge, and neatly arranged tools are visible. The image should look
-                        safe, practical, and achievable for a hobbyist. Photorealistic style.</em></p>
+                <figcaption>The Shed Forge</figcaption>
+                <p><em></em></p>
             </figure>
+
+            <p>An open air forge is usually only found on farms or in historical recreations and is unlikely to have any
+                large machinery. The floor would be made of dirt or gravel and the forge itself would likely be a
+                glorified fireplace, these forges are easier to work in for long periods of time.</p>
+
+            <figure>
+                <img src="images/outdoor-forge.jpg"
+                    alt="A well-organized outdoor blacksmithing setup under a covered patio.">
+                <figcaption>The Open Air Forge</figcaption>
+                <p><em></em></p>
+            </figure>
+
+            <p>Industrial forges vary from company to company and country to country, if you are curious about a
+                specific companies forge you can try to find something online but most have a no cameras rule and aside
+                from safty precautions do not desclose their setups.</p>
         </section>
 
         <section id="how" class="page-section">
-            <h2>How to Get Started</h2>
-            <p>[Outline the basic steps to begin the hobby. Start with safety first: always wear safety glasses, leather
-                gloves, and non-synthetic clothing.]</p>
-            <p>[List the essential starter equipment: a forge, an anvil (or anvil-shaped object), a hammer, tongs, and a
-                piece of steel.]</p>
-            <p>[Strongly recommend taking a beginner class to learn the fundamentals of hammer control, heat management,
-                and safety from an experienced smith.]</p>
+            <h2>How to Forge a Simple Knife</h2>
+            <p>
+                <strong>Safety First: This is a beginner's project, but not a day-one project.</strong> Before
+                attempting this,
+                you must be comfortable with controlling your fire and hammer. Bladesmithing introduces new risks,
+                especially
+                during the oil quench. Always wear your **PPE** (safety glasses, leather gloves, natural fiber clothing)
+                and
+                ensure your workspace has excellent ventilation and a fire extinguisher nearby.
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Design and Forge the Profile:</strong> Start with a small bar of high-carbon steel, like
+                    1084. Heat
+                    one end to a bright orange and use your hammer to forge a point. Then, working from the point
+                    backward,
+                    establish the rough shape of your knife and its "full tang" (where the handle will be the same shape
+                    as the
+                    steel). Focus on keeping the blade straight and flat.
+                </li>
+                <li>
+                    <strong>Refine the Shape:</strong> After the blade cools, use a grinder or files to refine the
+                    profile to
+                    your exact design. This is the best time to drill holes through the tang for the handle pins, as the
+                    steel
+                    is still in its soft, unhardened state.
+                </li>
+                <li>
+                    <strong>Normalize the Steel:</strong> To relieve stress from forging and grinding, you must
+                    normalize the
+                    blade. Heat the entire knife evenly until a magnet will no longer stick to it, then let it cool to
+                    room
+                    temperature in still air. Repeat this process a total of three times for a tough, reliable grain
+                    structure.
+                </li>
+                <li>
+                    <strong>Harden the Blade (The Quench):</strong> This is the most critical step. Reheat the blade
+                    evenly to
+                    the non-magnetic temperature one last time. Swiftly plunge it, edge-first, into a container of
+                    canola or
+                    quenching oil until it is completely cool. At this point, the steel should be as hard as glass and
+                    very
+                    brittle.
+                </li>
+                <li>
+                    <strong>Temper the Blade:</strong> To remove the brittleness and add toughness, you must temper the
+                    blade.
+                    Clean the steel so it's shiny, then place it in a preheated oven at 400°F (204°C) for two separate,
+                    two-hour
+                    cycles, letting it cool to room temperature in between. The steel should turn a light straw or
+                    bronze color,
+                    indicating a successful temper.
+                </li>
+                <li>
+                    <strong>Finish and Sharpen:</strong> With the heat treatment complete, the final step is to use
+                    files or a
+                    belt sander to clean up the blade, sharpen the final edge, and attach handle scales (wood or
+                    synthetic
+                    material) to the tang with pins and epoxy.
+                </li>
+            </ol>
 
             <figure>
-                <img src="images/how-blacksmithing.jpg"
-                    alt="A close-up of essential blacksmithing safety gear: leather gloves, safety glasses, and an apron.">
-
-                <figcaption>Safety and Basic Tools</figcaption>
-                <p class="ai-prompt"><em>AI Prompt: A flat-lay, photorealistic image of essential beginner blacksmithing
-                        gear on a dark, rustic wooden background. Include a cross-peen hammer, a pair of tongs, safety
-                        glasses, and leather gloves.</em></p>
+                <img src="images/how-knife.jpg"
+                    alt="A simple, hand-forged knife with a wooden handle resting on an anvil.">
+                <figcaption>A Finished Knife</figcaption>
+                <p><em></em></p>
             </figure>
         </section>
 
         <section id="why" class="page-section">
             <h2>Why Pick Up the Hammer?</h2>
-            <p>[Explain the rewarding aspects of blacksmithing. It’s a powerful way to de-stress and focus, turning your
-                full attention to the metal in front of you.]</p>
-            <p>[Talk about the immense satisfaction of creating something beautiful and functional with your own hands
-                from a simple bar of steel.]</p>
-            <p>[Mention the connection to history and the preservation of a timeless craft.]</p>
+            <p>Many people watch smithing on youtube as its a satisfying process and some like myself think why not give
+                it a go. I started with the Dragonforge Experience at the NC Renaissance Faire and it was a wonderful
+                expeience that really hooked me and I walked away with a VERY sharp rail spike.</p>
+            <p>I encourage everyone to try it if they can there are many classes or places that offer short expeiences
+                so a person can get the feel of smithing and more often then not walk away with a simple knife or
+                pendent of their own creation. It is extremely satisfying to have proof of ones hardwork that can be
+                displayed and admired not to mention the most satifying rining of metal on metal and the power that
+                comes from bending steel to your will.</p>
 
             <figure>
-                <img src="images/why-blacksmithing.jpg"
-                    alt="A finished, hand-forged item like a decorative leaf or a simple knife, displayed proudly.">
+                <img src="images/dragonforge.jpg" alt="The Dragonforge Experience blacksmithing.">
 
                 <figcaption>The Finished Piece</figcaption>
-                <p class="ai-prompt"><em>AI Prompt: A beautiful, detailed, photorealistic still life of a hand-forged
-                        iron leaf keychain. It rests on a piece of weathered wood, showcasing the hammer marks and
-                        craftsmanship. The lighting is soft and highlights the texture of the metal.</em></p>
+                <p style="text-align: center;"><em>The customer will strike the metal under watch of a worker who holds
+                        the tongs and will sometimes
+                        takeover if they spot a difficulty.</em></p>
             </figure>
         </section>
 
         <section id="ai-prompts" class="page-section">
-            <h2>AI Prompts Used</h2>
-            <p>[This section is for you to describe how you used AI. You can state that you used an AI to generate the
-                website skeleton and for image ideas.]</p>
-            <p>[The prompts for the images in each section are included in an italicized paragraph directly below each
-                image's caption. You can use these as a starting point for generating your own images.]</p>
-            <p>[Add a third paragraph if needed.]</p>
-            <figure>
-                <img src="images/ai-image.jpg"
-                    alt="An abstract digital art piece representing artificial intelligence.">
+            <h2>AI Prompts (Used Google Gemini)</h2>
+            <p>The following are the prompts used for code and image generation in order of use.</p>
 
-                <figcaption>AI in Creative Work</figcaption>
-                <p class="ai-prompt"><em>AI Prompt: An abstract, conceptual image representing artificial intelligence.
-                        Use flowing neon lines, circuit board patterns, and glowing nodes to create a sense of a digital
-                        brain thinking. The color palette should be blues, purples, and blacks.</em></p>
-            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Prompt in Appearance Order</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><em>You will be making the skeleton of a website for a hobby/interest of mine that is files,
+                                but will appear as multiple
+                                pages.
+
+                                UNLIKE MANY OTHER ASSIGNMENTS, THERE ARE NO LATE SUBMISSIONS OR RESUBMISSIONS FOR THIS
+                                ASSIGNMENT, PLEASE PLAN
+                                ACCORDINGLY.
+
+                                You may/should use AI for this :)
+
+                                Think of an activity that you are passionate about. If you don't have one, figure one
+                                out and fake it.
+
+                                Make a subfolder in your course folder called hobby
+
+                                Within that folder create an images folder (and others as you see fit).
+
+                                Create an index page that includes all the normal items our pages have had so far – do
+                                not use includes.
+
+                                header/main/footer within the body
+
+                                header tag should have an h1 with the name of the hobby
+
+                                footer tag should include validation buttons (HTML, CSS, accessibility) and a link to
+                                your design firm as you did with
+                                the course website.
+
+                                The page must validate with no warnings/errors (HTML, CSS, accessibility).
+
+                                Use an embedded stylesheet since this is all one page.
+
+                                Styling should follow CRAP principles.
+
+                                No Times New Roman, no generic blue underlined links, no plain white background, no
+                                plain black text.
+
+                                Color scheme must be different than your main site pages.
+
+                                Create sections (using <section> tags) that act like different “pages” for your hobby
+                                    site:
+
+                                    Who (About / About Me / Who We Are)
+
+                                    What (Home page – loads first, explains the hobby)
+
+                                    When (Best Times / Schedule / Seasons)
+
+                                    Where (Best Locations / Places)
+
+                                    How
+
+                                    Why
+
+                                    AI Prompts (if you used AI for code or text, show prompts here. If only images were
+                                    AI-generated, include a comment
+                                    in your submission that says “I only used AI for images.”)
+
+                                    Each section should:
+
+                                    Have an h2 heading.
+
+                                    Contain at least three items (e.g., paragraphs, figures, tables, forms, slideshow).
+
+                                    Include at least one figure (image + caption + italicized paragraph explaining the
+                                    AI prompt used).
+
+                                    Images must be your own, AI-generated, or open source. Keep a consistent style
+                                    (e.g., all photorealistic or all
+                                    cartoon).
+
+                                    Resize large images and maintain aspect ratio to avoid long loading times.
+
+                                    Navigation:
+
+                                    Add links in the header/nav to switch between sections.
+
+                                    Use CSS/JS so only the selected section is visible at a time (like a single-page
+                                    app).
+
+                                    Use a unique divider symbol (emoji or special character) different from your other
+                                    pages.
+
+                                    The What (Home) section should be the default visible page.</em></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><em>Show me how to animate an image carousel</em></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><em>How to add a W3 Disability/Accessibility validator</em></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><em>Generate an image of black smithing through the ages</em></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><em>Make a nice long paragraph about smithing through the ages maybe a paragpraph for each
+                                era (bronze age, iron age, medieval period, industrial revolution, and modern era)</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><em>Make a set of in-depth instructions for forging a basic knife</em></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><em>Give it the index.html with and the rubic then said "What would you grade this"</em>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
     </main>
 
     <footer class="container">
+        <p><a href="/itis3135/index.html">Back to ITIS3135</a></p>
         <div class="validation-links">
             <a href="https://validator.w3.org/check?uri=referer" target="_blank">
                 <img src="https://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML!">
@@ -340,8 +678,12 @@
             <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
                 <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
             </a>
+            <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">
+                <img src="https://www.w3.org/WAI/wcag21/wcag2.1A-v.png"
+                    alt="Level A conformance, W3C WAI Web Content Accessibility Guidelines 2.1">
+            </a>
         </div>
-        <p>&copy; 2025 [Your Name/Firm Here]</p>
+        <p>&copy; 2025 Grimble Enterprises</p>
     </footer>
 
     <script>
