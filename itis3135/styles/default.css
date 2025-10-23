@@ -119,3 +119,9 @@ td ul {
     padding-left: 20px;
     margin: 0;
 }
+
+.validation-links img {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
