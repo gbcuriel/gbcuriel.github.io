@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const imagePreview = document.getElementById('image-preview');
     const imageInput = document.getElementById('picture');
     const ackDateInput = document.getElementById('ackDate');
-    const formHeader = document.querySelector('form-header');
+    const formHeader = document.querySelector('main h3');
     const defaultImageSrc = imagePreview.src;
 
     function clearAllFields() {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h1>Introduction: ${fullName} ${nickname}</h1>
             <h2>${data.mascotAdjective} ${data.mascotAnimal}</h2>
             <img src="${imagePreview.src}" alt="${data.pictureCaption}" style="max-width: 250px; border-radius: 8px; margin-bottom: 10px;">
-            <p><em>${data.pictureCaption}</em></p>
+            <p class="image-caption"><em>${data.pictureCaption}</em></p>
             <p>${data.personalStatement}</p><hr>
             <ul>${bulletsHtml}</ul><hr>
             <div class="course-list">
