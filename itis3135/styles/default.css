@@ -125,3 +125,144 @@ td ul {
     width: 88px;
     height: 31px;
 }
+
+/* Styles for Introduction Form */
+#intro-form {
+    color: #ffffff;
+}
+
+#intro-form fieldset {
+    border: 1px solid rgba(255, 176, 124, 0.5);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+#intro-form legend {
+    font-weight: bold;
+    color: #ffb07c;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+#intro-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+#intro-form input[type="text"],
+#intro-form input[type="url"],
+#intro-form input[type="date"],
+#intro-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #ff5e62;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#intro-form ::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+#intro-form #image-preview {
+    border: 2px solid #ffb07c;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#intro-form button {
+    align-content: center;
+}
+
+#intro-form button,
+#restart-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #ffb07c 0%, #ff5e62 100%);
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#intro-form button:hover,
+#restart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#intro-form #add-course-btn {
+    background: #6b0000;
+}
+
+#intro-form .course-entry {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+#intro-form .course-entry .delete-course-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff5e62;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#output-container {
+    padding: 20px;
+}
+
+#output-container h1,
+#output-container h2 {
+    color: #ffb07c;
+    border-bottom: 2px solid rgba(255, 176, 124, 0.5);
+    padding-bottom: 10px;
+}
+
+#output-container blockquote {
+    border-left: 4px solid #ffb07c;
+    padding-left: 20px;
+    margin-left: 0;
+    font-style: italic;
+    color: #f0f0f0;
+}
+
+#output-container .course-list li {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}

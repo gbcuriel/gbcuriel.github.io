@@ -16,7 +16,128 @@
     <div w3-include-html="components/header.html"></div>
 
     <main>
+        <h3>Please submit the form below.</h3>
 
+        <form id="intro-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g., Jane" value="Grimble" required>
+
+                <label for="middleName">Middle Name/Initial (optional)</label>
+                <input type="text" id="middleName" name="middleName" placeholder="e.g., M." value="B">
+
+                <label for="nickname">Nickname/Preferred Name (optional)</label>
+                <input type="text" id="nickname" name="nickname" placeholder="e.g., Jenny">
+
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g., Doe" value="Curiel" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mascot & Picture</legend>
+                <label for="mascotAdjective">Mascot Adjective *</label>
+                <input type="text" id="mascotAdjective" name="mascotAdjective" placeholder="e.g., Awesome"
+                    value="Gluttonous" required>
+
+                <label for="mascotAnimal">Mascot Animal *</label>
+                <input type="text" id="mascotAnimal" name="mascotAnimal" placeholder="e.g., Albatross"
+                    value="Chupacabra" required>
+
+                <label for="divider">Divider *</label>
+                <input type="text" id="divider" name="divider" placeholder="~, |, ♥️, etc." value="|" required>
+
+                <label for="picture">Your Picture</label>
+                <img id="image-preview" src="images/mexico_trip.jpg" alt="Default Image Preview" width="150">
+                <input type="file" id="picture" name="picture" accept="image/*">
+
+                <label for="pictureCaption">Picture Caption *</label>
+                <input type="text" id="pictureCaption" name="pictureCaption"
+                    placeholder="A brief description of the image" value="San Juan Teotihuacán, State of Mexico, Mexico"
+                    required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Details</legend>
+                <label for="personalStatement">Personal Statement *</label>
+                <textarea id="personalStatement" name="personalStatement" rows="5"
+                    placeholder="Tell us a little about yourself."
+                    required>Howdy my name’s Grimble, my major is information Technology. I switched to this major cause UNCC wants calculus 1 and 2 to make games for some reason. I like cooking, games both physical and digital, adrenaline chasing and hikes (contrary to my appearance).</textarea>
+
+                <label>7 Main Bullets *</label>
+                <input type="text" name="mainBullets[]" placeholder="Bullet 1: Personal Background"
+                    value="Born in Charlotte but been around." required>
+                <input type="text" name="mainBullets[]" placeholder="Bullet 2: Professional Background"
+                    value="Regularly perform technological and software repair. I’ve done an Internship with NC Tech Partners. Nearly done with college."
+                    required>
+                <input type="text" name="mainBullets[]" placeholder="Bullet 3: Academic Background"
+                    value="Information Technology senior" required>
+                <input type="text" name="mainBullets[]" placeholder="Bullet 4: Primary Computer"
+                    value="Dell, Windows, Laptop, Home" required>
+                <input type="text" name="mainBullets[]" placeholder="Bullet 5: Courses I'm Taking & Why"
+                    value="See Below" required>
+                <input type="text" name="mainBullets[]" placeholder="Bullet 6: Something Else" value="Rotund" required>
+                <input type="text" name="mainBullets[]" placeholder="Bullet 7: Something Else" value="Something Else"
+                    required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Courses</legend>
+                <div id="courses-container">
+                </div>
+                <button type="button" id="add-course-btn">Add Course</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Miscellaneous</legend>
+                <label for="quote">Favorite Quote *</label>
+                <textarea id="quote" name="quote" rows="3" placeholder="Enter your favorite quote"
+                    required>“Time is a waste of life, life is a waste of time, if you’re wasted all the time you’ll have the time of your life!”</textarea>
+
+                <label for="quoteAuthor">Quote Author *</label>
+                <input type="text" id="quoteAuthor" name="quoteAuthor" placeholder="e.g., Edward Teller"
+                    value="Billy Connolly" required>
+
+                <label for="funnyThing">Funny Thing (optional)</label>
+                <textarea id="funnyThing" name="funnyThing" rows="3"
+                    placeholder="Share something funny that happened to you.">Why don't scientists trust atoms? Because they make up everything!</textarea>
+
+                <label for="anythingElse">Something I would like to share (optional)</label>
+                <textarea id="anythingElse" name="anythingElse" rows="3"
+                    placeholder="Anything else you'd like to share.">Rotund</textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Links</legend>
+                <input type="url" name="links[]" placeholder="Charlotte Webpages"
+                    value="https://webpages.charlotte.edu/dcuriel">
+                <input type="url" name="links[]" placeholder="GitHub" value="https://github.com/gbcuriel">
+                <input type="url" name="links[]" placeholder="ITIS3135 Course Page"
+                    value="https://webpages.charlotte.edu/dcuriel/itis3135/index.html">
+                <input type="url" name="links[]" placeholder="FCC" value="https://www.freecodecamp.org/grimble_c">
+                <input type="url" name="links[]" placeholder="linkedin"
+                    value="https://www.linkedin.com/in/diego-curiel-a16088223">
+            </fieldset>
+
+            <fieldset>
+                <legend>Acknowledgement</legend>
+                <label for="acknowledgment">Acknowledgment Statement *</label>
+                <textarea id="acknowledgment" name="acknowledgment" rows="3" placeholder="I acknowledge that..."
+                    required>I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</textarea>
+
+                <label for="ackDate">Acknowledgement Date *</label>
+                <input type="date" id="ackDate" name="ackDate" required>
+            </fieldset>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset to Prefilled</button>
+                <button type="button" id="clear-btn">Clear All</button>
+            </div>
+        </form>
+
+        <div id="output-container" class="hidden"></div>
+        <button id="restart-btn" class="hidden">Create Another Introduction</button>
     </main>
 
     <div w3-include-html="components/footer.html"></div>
