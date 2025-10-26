@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- VARIABLES ---
     const form = document.getElementById('intro-form');
     const clearButton = document.getElementById('clear-btn');
     const addCourseButton = document.getElementById('add-course-btn');
@@ -9,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const imagePreview = document.getElementById('image-preview');
     const imageInput = document.getElementById('picture');
     const ackDateInput = document.getElementById('ackDate');
+    const formHeader = document.querySelector('main h3');
     const defaultImageSrc = imagePreview.src;
 
     function clearAllFields() {
@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         outputContainer.innerHTML = outputHTML;
         form.classList.add('hidden');
+        formHeader.classList.add('hidden');
         outputContainer.classList.remove('hidden');
         restartButton.classList.remove('hidden');
     }
@@ -98,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         outputContainer.classList.add('hidden');
         restartButton.classList.add('hidden');
         form.classList.remove('hidden');
+        formHeader.classList.remove('hidden');
         form.reset();
         ackDateInput.valueAsDate = new Date();
         imagePreview.src = defaultImageSrc;
@@ -141,7 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 0);
     });
 
-    // --- INITIAL SETUP ---
     ackDateInput.valueAsDate = new Date();
     addCourseBlock();
     addCourseBlock();
