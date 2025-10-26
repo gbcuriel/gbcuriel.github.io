@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const imagePreview = document.getElementById('image-preview');
     const imageInput = document.getElementById('picture');
     const ackDateInput = document.getElementById('ackDate');
-    const formHeader = document.querySelector('main h3');
+    const formHeader = document.querySelector('form-header');
     const defaultImageSrc = imagePreview.src;
 
     function clearAllFields() {
