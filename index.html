@@ -52,6 +52,22 @@
       text-align: center;
     }
 
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav hr {
+      width: 60%;
+      margin: 1rem auto;
+      border: 1px solid #ffffff;
+    }
+
     a {
       color: #ee8d1e;
     }
@@ -74,24 +90,52 @@
     }
 
     /* Rule Overrides For Laptops / Small Screens */
-    @media screen and (min-width: 981px) and (max-width: 1400px) {
-      #colorbox {
-        background-color: yellow;
+    @media screen and (max-width: 1400px) {
+
+      main {
+        width: 90%;
+        margin: 15px auto;
+      }
+
+      h1 {
+        font-size: 2.2rem;
       }
     }
 
     /* Rule Overrides For Tablet Devices */
-    @media screen and (min-width: 601px) and (max-width: 980px) {
-      #colorbox {
-        background-color: orange;
+    @media screen and (max-width: 980px) {
+      main {
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 2.0rem;
       }
     }
 
     /* Rule Overrides For Mobile Devices */
-    @media screen and (min-width: 370px) and (max-width: 600px) {
-      #colorbox {
-        background-color: red;
+    @media screen and (max-width: 600px) {
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        border-radius: 0;
       }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .hide-on-mobile {
+        display: none;
+      }
+
+      .button-group {
+        flex-direction: column;
+      }
+
     }
   </style>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>

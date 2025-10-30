@@ -350,3 +350,12 @@ td ul {
     word-break: break-all;
     user-select: all;
 }
+
+.json-output code.language-html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-word;
+    user-select: all;
+}

@@ -68,7 +68,7 @@ if (!jsonButton) {
 
         const newHtmlContent = `
             <section class="json-output">
-                <h3>Your Introduction in JSON Format</h3>
+                <h3>Introduction JSON</h3>
                 <p>You can select and copy the code block below.</p>
                 <pre><code class="language-json">${escapedJsonString}</code></pre>
             </section>
