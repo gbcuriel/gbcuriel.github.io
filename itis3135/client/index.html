@@ -5,14 +5,387 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NC Tech Partners</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="icon" href="images/nc-83.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
+    <div id="header-placeholder"></div>
+
     <main>
-        <p>This is the main content area for the ITIS 3135 client application.</p>
+        <div class="w-full">
+            <div id="carousel-container" class="relative w-full overflow-hidden h-[80vh]">
+
+                <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out h-full">
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/1c.jpg"
+                            alt="A middle aged woman holding a cell phone calling NC Tech Partners to get help for her business."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/21"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Technology Help is just a phone call away.
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                We specialize in delivering small business technology solutions.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/2c.jpg"
+                            alt="A person working their cell phone and laptop together to coordinate a business process."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/25"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Accessible solutions
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                We create websites, mobile applications, and custom software for your business needs.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/3c.jpg"
+                            alt="A mechanic in his shop with technology to help run his business."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/19"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Custom, tailored, and secure
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                Technology solutions that are built as unique as your business needs.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/4c.jpg"
+                            alt="Woman using laptop for her small business website from her couch."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Anytime, anywhere, the technology help you need.
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                From your office, or your couch, when you need a technology partner, we're here for you.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/5c.jpg" alt="Multiple technology icons shown hovering over a laptop."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/25"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Websites, mobile apps, custom business software.
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                Our engineers have over 35 years of technology project experience. <br /> We're ready to
+                                help you realize your business goals.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/6c.jpg"
+                            alt="A pair of asian american small business owners working with an ipad and a laptop."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/19"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                User focused, easy to navigate solutions
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                We construct easy-to-use technology for your company needs.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/11c.jpg"
+                            alt="An african american woman using touch screen technology to write custom code."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/19"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Future focused and forward thinking.
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                We combine the latest technologies and methodologies so your business stays ahead of the
+                                curve.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/7c.jpg"
+                            alt="A woman analyzing data on multiple screens for cyber safety."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/25"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Keeping a watchful eye for cyber safety.
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                We're certified cyber technology specialists committed to keeping your business safe.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/8c.jpg"
+                            alt="A man and a woman looking at several technology performance screens of data"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/19"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-5xl px-4 text-center">
+                            <h2 class="text-4xl md:text-5xl font-bold text-white">
+                                Orchestrating technologies to work for your
+                                business
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                We can help you craft a custom technology platform that fits your unique business needs.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/9c.jpg"
+                            alt="An african american business woman using cloud technologies from her shop sales terminal."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/19"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Custom business solutions with cloud technology.
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                The cloud offers tools and technologies that can help small businesses thrive.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/10c.jpg"
+                            alt="A man using a laptop and cell phone to process business transaction data."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/25"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Digital transformation at your fingertips
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                Custom Technology Business solutions built to empower your business.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-full flex-shrink-0 relative h-full">
+                        <img src="images/carousel/12c.jpg"
+                            alt="An african american woman calling NC Tech Partners on the phone to get personalized business technology help."
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black/19"></div>
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 text-center">
+                            <h2 class="text-4xl md:text-6xl font-bold text-white">
+                                Technology Help is just a phone call away.
+                            </h2>
+                            <p class="text-lg md:text-2xl text-white/90 mt-4">
+                                NC Tech Partners is ready to help with your small business technology needs.
+                            </p>
+                        </div>
+                        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full text-center">
+                            <a href="contact.html"
+                                class="inline-block px-8 py-3 bg-white/90 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-white transition duration-300">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="prev-btn"
+                    class="absolute top-1/2 left-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-gray-800 p-3 rounded-full shadow-md transition duration-300 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <button id="next-btn"
+                    class="absolute top-1/2 right-4 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-gray-800 p-3 rounded-full shadow-md transition duration-300 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+
+        <section class="technology-partner-section">
+            <div class="container">
+                <header class="section-header">
+                    <h1>Your technology partner</h1>
+                    <p>
+                        We are a team of specialists, local professionals, that you can connect with for all your
+                        small business technology needs. We can help protect your business from hackers, build a
+                        better website, connect a Shopify online store, and connect your payment processing. We can
+                        create a mobile app for your business, or help you with cyber and data security.
+                    </p>
+                </header>
+
+                <div class="cta-box">
+                    <h2>Our initial consultation meeting is free.</h2>
+                    <p>
+                        Call or email to
+                        <a href="contact.html" class="cta-link">get started</a>.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+                        <div class="card-image-box">
+                            <img src="images/websites.jpg" alt="Multiple devices showing website design"
+                                class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon-title">
+                                <span class="card-icon">&#127760;</span>
+                                <h3>Websites</h3>
+                            </div>
+                            <p>Effective and affordable websites for small businesses.</p>
+                            <a href="services.html" class="card-link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-image-box">
+                            <img src="images/mobile_development.jpg"
+                                alt="A smartphone displaying various application icons" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon-title">
+                                <span class="card-icon">&#128241;</span>
+                                <h3>Mobile Apps</h3>
+                            </div>
+                            <p>iOS and Android applications designed for your business</p>
+                            <a href="services.html" class="card-link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-image-box">
+                            <img src="images/network_security.jpg"
+                                alt="A woman working on a laptop in a data center for cybersecurity" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon-title">
+                                <span class="card-icon">&#128274;</span>
+                                <h3>Cybersecurity</h3>
+                            </div>
+                            <p>Just how safe is your business from cyber threats?</p>
+                            <a href="services.html" class="card-link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="card-image-box">
+                            <img src="images/special_projects.jpg"
+                                alt="A digital globe representing special technology projects" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-icon-title">
+                                <span class="card-icon">&#10024;</span>
+                                <h3>Special Projects</h3>
+                            </div>
+                            <p>Technology solutions tailored to your business needs.</p>
+                            <a href="services.html" class="card-link">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/carousel.js"></script>
 
 </body>
 
