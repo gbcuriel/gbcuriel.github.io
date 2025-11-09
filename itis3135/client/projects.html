@@ -14,13 +14,37 @@
 
     <div id="header-placeholder"></div>
 
-    <main></main>
+    <main class="container">
+
+        <br />
+
+        <!-- Input Section -->
+        <div class="viewer-input-group">
+            <input id="search-input" type="text" placeholder="Enter ID (KISER, CHARLOTTE, or GLUTTON)"
+                class="viewer-input-field" autofocus>
+            <button id="search-button" class="viewer-action-button">
+                Unlock View
+            </button>
+        </div>
+
+        <!-- Artifact View Box -->
+        <div id="artifact-view" class="viewer-blurred-content" data-overlay-text="ACCESS DENIED: UNAUTHORIZED">
+            <div id="artifact-content" class="viewer-content-section">
+                <p>
+                    COMING SOON (likely an image)
+                </p>
+            </div>
+        </div>
+
+        <br /><br /><br />
+
+    </main>
 
     <div id="footer-placeholder"></div>
 
     <script src="scripts/app.js"></script>
 
-    <script src="scripts/carousel.js"></script>
+    <script src="scripts/verifs.js"></script>
 
 </body>
 
