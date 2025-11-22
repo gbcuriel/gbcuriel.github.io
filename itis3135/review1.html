@@ -10,12 +10,70 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div data-w3-include-html="components/header.html"></div>
 
     <main>
+
+        <h2 style="margin-left: 60px; margin-right: 50px; text-decoration: underline;"><a href="#jbReview">Josiah
+                Blanding Review 1</a><a href="#clReview" style="float: right; text-decoration: underline white;">Other
+                Review
+                2</a>
+        </h2>
+
+        <section id="jbReview" class="page-section">
+            <h2>Seargent Detail by Josiah Blanding</h2>
+            <img src="images/peerreview1.png" alt="Seargent Detail Screenshot"
+                style="width:100%; max-width:600px; display:block; margin:auto; border: 2px solid #3e5057; border-radius: 8px;">
+            <p>Well done with good coloring</p>
+            <p>Checklist</p>
+            <ul>
+                <li>Header, Main, & Footer &check;</li>
+                <li>Correct Header Content &check;</li>
+                <li>Main has page name &check;</li>
+                <li>Slogan on every page &#10008;</li>
+                <li>Correct Footer Content &#10008;</li>
+                <li>Correct by assignment &check;</li>
+            </ul>
+            <p>Comments</p>
+            <ul>
+                <li>Contact and about not formatted like other tabs</li>
+                <li>Homepage missing footer</li>
+                <li>Footer needs replicate nav or back to top bottom</li>
+                <li>Slogan only on homepage</li>
+                <li>In services and gallery if cards are supposed to be buttons they don't work</li>
+                <li>Company name h1 should also go to homepage</li>
+            </ul>
+        </section>
+
+        <section id="clReview" class="page-section">
+            <h2>What is Blacksmithing?</h2>
+            <p>BULL SHIT GO</p>
+            <p>The basic process is heating the metal in a forge until it becomes malleable so it to be shaped with a
+                hammer and anvil. When the desired shape is achieved the metal is cooled locking in its new shape. A
+                smith can forge an endless array of items, including durable tools, custom knives, and beautiful
+                decorative ironwork.</p>
+            <p>Some of the commonly used tools are:</p>
+            <ul style="margin-left: 15px;">
+                <li>Hammer</li>
+                <li>Anvil</li>
+                <li>Forge</li>
+                <li>Tongs</li>
+            </ul>
+        </section>
 
     </main>
 
@@ -24,6 +82,16 @@
     <script src="scripts/HTMLInclude.js"></script>
     <script>
         includeHTML();
+
+        function switchTab(tabId) {
+            var sections = document.getElementsByClassName("page-section");
+
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+
+            document.getElementById(tabId).style.display = "block";
+        }
     </script>
 
 </body>

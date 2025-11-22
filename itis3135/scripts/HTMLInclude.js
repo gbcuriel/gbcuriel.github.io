@@ -32,3 +32,28 @@ function updateDynamicContent() {
         titlePlaceholder.textContent = pageSpecificTitle;
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('a');
+    const sections = document.querySelectorAll('.page-section');
+
+    function showSection(sectionId) {
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            targetSection.style.display = 'block';
+        }
+    }
+
+    showSection('jbReview');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            showSection(targetId);
+        });
+    });
+});
