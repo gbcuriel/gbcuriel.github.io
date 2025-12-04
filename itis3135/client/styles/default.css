@@ -179,6 +179,14 @@ body {
     margin-right: auto;
 }
 
+.footer-copyright a {
+    text-decoration: underline;
+}
+
+.footer-copyright a:hover {
+    color: #ffffff;
+}
+
 /* --- Footer Responsive Styles --- */
 @media (max-width: 992px) {
     .footer-container {
